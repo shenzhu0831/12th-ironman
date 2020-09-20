@@ -1,0 +1,10 @@
+@use './utility/reset';
+
+@use './layout/header';
+@use './layout/navbar';
+@use './layout/main';
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+}

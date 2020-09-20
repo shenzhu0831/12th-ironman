@@ -1,0 +1,44 @@
+@use '../utility/color';
+@use '../utility/font-size';
+@use '../utility/reset';
+
+.navbar {
+  display: block;
+  text-align: center;
+  padding: 12px 0;
+  background-color: color.$gray-200;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 12px 60px;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 50px;
+  }
+  a {
+    padding: 8px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: color.$black;
+    letter-spacing: 5px;
+    border-bottom: solid 3px color.$white;
+    &:nth-child(4) {
+      border-bottom: none;
+    }
+    @media(min-width:768px) {
+      border-bottom: none;
+    } 
+  }
+  .back-to-top {
+    display: none;
+    @media(min-width: 768px) {
+      display: block;
+    }
+  }
+}

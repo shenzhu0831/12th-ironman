@@ -1,0 +1,48 @@
+@use '../utility/color';
+@use '../utility/font-size';
+@use '../utility/reset';
+@use '../component/finish';
+@use '../component//unfinished';
+
+main {
+  padding: 60px 0;
+  h2 {
+    margin-bottom: 20px;
+    font-size: 48px;
+    color: color.$blue-500;
+    text-align: center;
+  }
+  .web-camp {
+    margin-bottom: 50px;
+    @media (min-width: 1200px) {
+      max-width: 1200px;
+      margin: 0  auto 50px;
+    }
+  }
+  .backend {
+    margin-bottom: 50px;
+    @media (min-width: 1200px) {
+      max-width: 1200px;
+      margin: 0  auto 50px;
+    }
+  }
+  .android {
+    margin-bottom: 50px;
+    @media (min-width: 1200px) {
+      max-width: 1200px;
+      margin: 0  auto 50px;
+    }
+  }
+  .ios {
+    margin-bottom: 50px;
+    @media (min-width: 1200px) {
+      max-width: 1200px;
+      margin: 0  auto 50px;
+    }
+  }
+  .info-board {
+    @media (min-width: 1024px) {
+      display: flex;
+    }
+  }
+}
