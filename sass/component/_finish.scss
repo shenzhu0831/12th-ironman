@@ -17,11 +17,11 @@
   }
   .member-info {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
     &-avatar {
       width: 100px;
       height: 100px;
-      padding: 10px;
       margin-right: 20px;
       background-color: color.$white;
       border: solid 3px color.$black;
