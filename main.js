@@ -79,7 +79,7 @@ async function getApi() {
 async function getMemberInfo() {
   LoadingView.classList.add('is-show')
   const ironmanData = await getApi() 
-  // LoadingView.classList.remove('is-show')
+  LoadingView.classList.remove('is-show')
 
   const PostStatus = Object.entries(filterCamp(ironmanData.data)).map(everyCamp=>{
     return FinishStatus(everyCamp[1])
