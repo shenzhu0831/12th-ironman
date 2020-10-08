@@ -4,6 +4,7 @@
 
 header {
   padding: 30px 0;
+  text-align: center;
   @media(min-width: 768px) {
     padding: 80px 0;
   }
@@ -35,8 +36,7 @@ header {
     }
   }
   .date {
-    text-align: center;
-    time {
+    span {
       font-size: 34px;
       text-transform: uppercase;
       @media(min-width: 768px) {
@@ -44,6 +44,16 @@ header {
       }
       @media (min-width:1200px) {
         font-size: 52px;
+      }
+    }
+    .data-day {
+      font-size: 25px;
+      text-transform: uppercase;
+      @media(min-width: 768px) {
+        font-size: 38px;
+      }
+      @media (min-width:1200px) {
+        font-size: 45px;
       }
     }
   }

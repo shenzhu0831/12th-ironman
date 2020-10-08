@@ -8,7 +8,7 @@ const AndroidCampUnfinish = document.querySelector('.android-member-unfinish')
 const IosCampFinish = document.querySelector('.ios-member-finish')
 const IosCampUnfinish = document.querySelector('.ios-member-unfinish')
 const LoadingView = document.querySelector('.loading-container')
-
+const Progress = document.querySelector('.data-day')
 
 function filterCamp(ironMemberInfo) {
   const iosCamp =  ironMemberInfo.filter(CampsItems=>CampsItems.camp === "iOS")
@@ -86,6 +86,25 @@ async function getMemberInfo() {
   })
   render( PostStatus )
 }
+
+function GetProgressDate() {
+  let ProgressDate = new Date()
+  // let date = ProgressDate.toLocaleString('zh_TW', { year: 'numeric', month: '2-digit', day: '2-digit' })
+  let date = new Intl.DateTimeFormat('zh-CN', {
+    year: 'numeric',
+    month: 'numeric',
+    day: 'numeric',
+    weekday: 'long',
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric',
+    hour12: false
+  }).format(ProgressDate)
+  // console.log(date)
+  return date
+}
+
+Progress.innerText = GetProgressDate()
 
 function creatMemberInfo(MemberData) {
   let DateFormat = new Date(MemberData.lastFinishedDatetime)

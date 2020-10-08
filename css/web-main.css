@@ -65,7 +65,6 @@ button {
   z-index: 1;
   background-image: url(https://i.imgur.com/iXDWhsQ.jpg);
   background-size: cover;
-  opacity: 0.8;
   animation: Background 0.5s steps(5) infinite;
 }
 
@@ -80,6 +79,7 @@ button {
 
 header {
   padding: 30px 0;
+  text-align: center;
 }
 @media (min-width: 768px) {
   header {
@@ -119,21 +119,32 @@ header .title h1:first-child {
     font-size: 52px;
   }
 }
-header .date {
-  text-align: center;
-}
-header .date time {
+header .date span {
   font-size: 34px;
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  header .date time {
+  header .date span {
     font-size: 40px;
   }
 }
 @media (min-width: 1200px) {
-  header .date time {
+  header .date span {
     font-size: 52px;
+  }
+}
+header .date .data-day {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  header .date .data-day {
+    font-size: 38px;
+  }
+}
+@media (min-width: 1200px) {
+  header .date .data-day {
+    font-size: 45px;
   }
 }
 
