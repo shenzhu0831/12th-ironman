@@ -1,9 +1,14 @@
 @use './utility/reset';
+@use './utility/font-size';
 
 @use './layout/loading';
 @use './layout/header';
 @use './layout/navbar';
 @use './layout/main';
+
+* {
+  font-family: font-size.$font-family-base;
+}
 
 footer {
   padding: 20px 0;
